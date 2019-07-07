@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script src='http://cdn.bootcss.com/svg.js/2.1.0/svg.min.js'></script>
+    <script type='text/javascript'>
+        var i = 0;
+        function rotateIt(argu) {
+            SVG('drawing');
+            SVG.get('love').rotate(argu % 360);
+        }
+    </script>
+    <svg height='600' width='600' id='drawing'>
+        <text x='0' y='20' fill='red' id='love'>I love SVG</text>
+    </svg>
+</body>
+
+</html>
